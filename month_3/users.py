@@ -13,6 +13,7 @@ class simple(BaseModel):
     name: str  = Field(..., example="Sam Larry")
     email: str  = Field(..., example="sam@example.com")
     password: str  = Field(..., example="sam123")
+    userType : str = Field(..., example="student")
 
 @app.post("/signup")
 def signup(input: simple):
