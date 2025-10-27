@@ -1,4 +1,6 @@
 DATA/
 .env
+.vscode
+my_venv
 
 
