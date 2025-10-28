@@ -1,4 +1,4 @@
-from database import db
+from month_3.Backend_folder.database import db
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 from sqlalchemy import text
