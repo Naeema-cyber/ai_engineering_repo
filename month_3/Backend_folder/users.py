@@ -1,5 +1,5 @@
 from database import db
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel, Field
 from sqlalchemy import text
 import os
@@ -12,13 +12,14 @@ import jwt
 
 load_dotenv()
 app = FastAPI(title="Simple App", version="1.0.0")
+
+token_time = int(os.getenv("token_time"))
 class simple(BaseModel):
     name: str  = Field(..., example="Sam Larry")
     email: str  = Field(..., example="sam@example.com")
     password: str  = Field(..., example="sam123")
     userType : str = Field(..., example="student")
     
-    token_time = int(os.getenv("token_time"))
 
 @app.post("/signup")
 def signup(input: simple):
