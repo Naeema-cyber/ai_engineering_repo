@@ -1,0 +1,40 @@
+{
+  "original_shape": [
+    614,
+    18
+  ],
+  "final_shape": [
+    614,
+    10
+  ],
+  "selected_features": [
+    "CoapplicantIncome",
+    "LoanAmount",
+    "Loan_Amount_Term",
+    "ApplicantIncome",
+    "ApplicantIncome_log",
+    "CoapplicantIncome_log",
+    "LoanAmount_log",
+    "Loan_Amount_Term_log",
+    "LA_to_IN_ratio",
+    "Total_Income"
+  ],
+  "engineered_features": [
+    "ApplicantIncome_log",
+    "CoapplicantIncome_log",
+    "LoanAmount_log",
+    "Loan_Amount_Term_log",
+    "LA_to_IN_ratio",
+    "Total_Income"
+  ],
+  "train_samples": 368,
+  "val_samples": 123,
+  "test_samples": 123,
+  "scaling_method": "RobustScaler",
+  "log_transformed": [
+    "ApplicantIncome",
+    "CoapplicantIncome",
+    "Loan_Amount_Term",
+    "LoanAmount"
+  ]
+}
