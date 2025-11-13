@@ -5,13 +5,11 @@
   ],
   "final_shape": [
     614,
-    10
+    8
   ],
   "selected_features": [
-    "CoapplicantIncome",
-    "LoanAmount",
+    "Credit_History",
     "Loan_Amount_Term",
-    "ApplicantIncome",
     "ApplicantIncome_log",
     "CoapplicantIncome_log",
     "LoanAmount_log",
